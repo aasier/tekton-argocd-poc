@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:latest
+FROM docker.io/adoptopenjdk/openjdk11:latest
 VOLUME /tmp
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
