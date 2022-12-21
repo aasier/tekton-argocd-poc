@@ -7,7 +7,7 @@ spec:
     app: products
   ports:
     - port: 9091
-      targetPort: 8080-tcp
+      targetPort: 80-tcp
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -27,7 +27,8 @@ spec:
     spec:
       containers:
         - name: products
-          image: registry.cicd.svc.cluster.local:5000/products:latest
+          #image: registry.cicd.svc.cluster.local:5000/products:latest
+          image: nginx
           ports:
-            - containerPort: 8080
-              name: 8080-tcp
+            - containerPort: 80
+              name: 80-tcp
