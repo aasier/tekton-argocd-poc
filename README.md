@@ -4,4 +4,4 @@ This is a PoC to check Tekton, Argo CD and how both tools can work together foll
 
 The doc associated to this repo is located in my personal blog [KUBERNETES - CI/CD WITH TEKTON & ARGO CD](https://jaruiz.io/kubernetes/2021/03/16/Tekton-ArgoCD/)
 
-#2#
+#3#
